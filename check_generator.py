@@ -13,7 +13,7 @@ def print_check(priceses):
         total += priceses[i]
     ToPrint = ["*"*21,"*" + " "*19 +"*","*   *************** *","*  *************    *","*  *************    *","*  *************    *","*  *************    *","*            ***    *","* **************    *","* *************     *", "-"*21 ,  "*" + "Total: "+ str(total) + " "*(19-len("Total: "+ str(total))) +"*","*" + " "*19 +"*", "*"*21]
     for i in priceses:
-        ToPrint.insert(11,"*• " + i +" "+ str(priceses[i]) + " "*(17-len(i+" "+str(priceses[i]))) + "*") 
+        ToPrint.insert(11,"*• " + i +" "+ str(priceses[i]) + " "*(18-len(i+" "+str(priceses[i]))) + "*") 
     for i in ToPrint:
         print(i)
     print("F7 to print")
