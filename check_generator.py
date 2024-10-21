@@ -33,10 +33,13 @@ while True:
     if command.split()[0] == "print":
         print_check(prices)
     elif command.split()[0] == "add":
-        prices[command.split()[1]] = float(command.split()[2])
+        prices[command.split()[1]] = eval(command.split()[2])
         print(prices)
     elif command.split()[0] == "del":
         prices.remove(command.split()[1])
+    elif command.split()[0] == "clear":
+        prices.clear()
+        print("Succesuly cleared")
     elif command.split()[0] == "exit":
         print("Thank for using")
         break
