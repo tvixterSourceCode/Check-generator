@@ -36,7 +36,7 @@ while True:
         prices[command.split()[1]] = eval(command.split()[2])
         print(prices)
     elif command.split()[0] == "del":
-        prices.remove(command.split()[1])
+        prices.pop(command.split()[1])
     elif command.split()[0] == "clear":
         prices.clear()
         print("Succesuly cleared")
